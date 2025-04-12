@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="auth-buttons">
+        <a href="login.html" class="auth-btn login-btn">
+            <i class="fas fa-sign-in-alt"></i>
+            <span>Войти</span>
+        </a>
+        <a href="register.html" class="auth-btn register-btn">
+            <i class="fas fa-user-plus"></i>
+            <span>Регистрация</span>
+        </a>
+    </div>
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn">
+            <i class="fas fa-home"></i>
+            <span>Главная</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="reviews-page">
+            <h1>Отзывы</h1>
+            <div class="reviews-container">
+                <!-- Здесь будут отображаться отзывы -->
+            </div>
+            
+            <div class="review-form">
+                <h3>Оставить отзыв</h3>
+                <form id="reviewForm">
+                    <div class="rating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <textarea name="reviewText" id="reviewText" placeholder="Почему вы поставили такую оценку?" required></textarea>
+                    <button type="submit" class="submit-review">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="translations.js"></script>
+    <script src="auth.js"></script>
+    <script src="reviews.js"></script>
+</body>
+</html> 
